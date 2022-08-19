@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+button:hover{
+    cursor: pointer;
+}
+
+:root{
+    /* This is Primary Color  */
+    --primary-color:#2196f3;
+    --primary-dark:#1976d2;
+
+    /* This is Warning color  */
+    --warning-color:#ffeb3b;
+    --warning-dark:#ffeb3baf;
+
+    /* This is Danger color  */
+    --danger-color: #f44336;
+    --danger-dark:#e53935;
+
+    /* This is Secondary Color  */
+    --secondary-color: #4caf50;
+    --dark-secondary: #388e3c;
+}
