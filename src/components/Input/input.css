@@ -1,5 +1,5 @@
-:root{
-    --border-radius:4px;
+:root {
+  --border-radius: 4px;
 }
 input {
   width: 100%;
@@ -10,11 +10,37 @@ input {
   border-radius: var(--border-radius);
 }
 
-#container-id{
-    width: 300px;
-    border: 1px solid rgb(238, 238, 238);
-    margin: 5px;
-    position: relative;
-    border-radius: var(--border-radius);
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+#container-id>div {
+  width: 300px;
+  border: 1px solid rgb(238, 238, 238);
+  position: relative;
+  border-radius: var(--border-radius);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  display: flex;
+  margin-top: 10px;
+}
+div[data-component-type="start"],
+div[data-component-type="end"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 8px;
+  background-color: rgb(240, 240, 240);
+  border-radius: var(--border-radius);
+  flex-shrink: 0;
+}
+.input-container{
+  width: 100%;
+}
+
+label[For="Input"]{
+   color: rgb(90, 90, 90);
+}
+
+label[For="Input"] + span{
+  color: var(--danger-color);
+}
+
+#container-id>small{
+  color: var(--danger-color);
 }
